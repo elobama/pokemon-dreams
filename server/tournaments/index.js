@@ -330,16 +330,6 @@ class Tournament extends Rooms.RoomGame {
 		if (gameCount > 4) {
 			output.errorReply("Due to high load, you are limited to 4 games at the same time.");
 			return;
-		}
-
-		if (!isAllowAlts) {
-			for (let otherUser of this.generator.getUsers()) {
-				if (!otherUser) continue;
-				otherUser = Users(otherUser.userid);
-				if (otherUser && otherUser.latestIp === user.latestIp) {
-					output.sendReply('|tournament|error|AltUserAlreadyAdded');
-					return;
-				}
 			}
 		}
 
