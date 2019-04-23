@@ -33,19 +33,6 @@ class Poll {
 		for (const [i, option] of options.entries()) {
 			this.options.set(i + 1, {name: option, votes: 0});
 		}
-	}
-
-	/**
-	 * @param {User} user
-	 * @param {number} option
-	 */
-	vote(user, option) {
-		let ip = user.latestIp;
-		let userid = user.userid;
-
-		if (userid in this.voters || ip in this.voterIps) {
-			return user.sendTo(this.room, `You have already voted for this poll.`);
-		}
 
 		this.voters[userid] = option;
 		this.voterIps[ip] = option;
