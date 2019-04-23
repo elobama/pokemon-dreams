@@ -42,7 +42,11 @@ class Poll {
 	vote(user, option) {	
 		let ip = user.latestIp;	
 		let userid = user.userid;	
+	
+			if (userid in this.voters || ip in this.voterIps) {
+			return user.sendTo(this.room, `You have already voted for this poll.`);
 	}
+		
 		this.voters[userid] = option;
 		this.voterIps[ip] = option;
 		// @ts-ignore this is never undefined since we checked this earlier.
