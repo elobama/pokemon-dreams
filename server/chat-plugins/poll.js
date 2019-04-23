@@ -33,7 +33,16 @@ class Poll {
 		for (const [i, option] of options.entries()) {
 			this.options.set(i + 1, {name: option, votes: 0});
 		}
+	}	
 
+ 	/**	
+	 * @param {User} user	
+	 * @param {number} option	
+	 */	
+	vote(user, option) {	
+		let ip = user.latestIp;	
+		let userid = user.userid;	
+	}
 		this.voters[userid] = option;
 		this.voterIps[ip] = option;
 		// @ts-ignore this is never undefined since we checked this earlier.
