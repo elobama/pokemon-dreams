@@ -1434,6 +1434,22 @@ let BattlePokedex = {
 		prevo: "machoke",
 		evoType: "trade",
 		eggGroups: ["Human-Like"],
+		otherFormes: ["machampmega"],
+	},
+	machampmega: {
+		num: 68,
+		species: "Machamp-Mega",
+		baseSpecies: "Machamp",
+		forme: "Mega",
+		formeLetter: "M",
+		types: ["Fight"],
+		genderRatio: {M: 0.75, F: 0.25},
+		baseStats: {hp: 90, atk: 200, def: 110, spd: 115, spe: 35},
+		abilities: {0: "No Guard"},
+		heightm: 1.8,
+		weightkg: 150
+		color: "Blue",
+		eggGroups: ["Human-Like"],
 	},
 	bellsprout: {
 		num: 69,
