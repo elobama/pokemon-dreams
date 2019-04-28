@@ -7722,7 +7722,7 @@ let BattlePokedex = {
 	froslass: {
 		num: 478,
 		species: "Froslass",
-		types: ["Ice", "Ghost"],
+		types: 
 		gender: "F",
 		baseStats: {hp: 70, atk: 80, def: 70, spa: 80, spd: 70, spe: 110},
 		abilities: {0: "Snow Cloak", H: "Cursed Body"},
@@ -7732,6 +7732,22 @@ let BattlePokedex = {
 		prevo: "snorunt",
 		evoType: "stone",
 		evoItem: "Dawn Stone",
+		eggGroups: ["Fairy", "Mineral"],
+		otherFormes: ["froslassmega"],
+	},
+	froslassmega: {
+		num: 478,
+		species: "Froslass-Mega",
+		baseSpecies: "Froslass",
+		forme: "Mega",
+		formeLetter: "M",
+		types: ["Ice", "Ghost"],
+		gender: "F",
+		baseStats: {hp: 70, atk: 50, def: 70, spa: 150, spd: 70, spe: 150},
+		abilities: {0: "Refrigerate"},
+		heightm: 2,
+		weightkg: 30,
+		color: "White",
 		eggGroups: ["Fairy", "Mineral"],
 	},
 	rotom: {
