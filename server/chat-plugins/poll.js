@@ -42,7 +42,6 @@ class Poll {
 	vote(user, option) {	
 		let ip = user.latestIp;	
 		let userid = user.userid;	
-	
 	}
 		
 		this.voters[userid] = option;
